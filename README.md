@@ -1,2 +1,16 @@
-# Gemini-Live-Voice-Chat-Server-to-Server-Node-Express-
-A reference implementation to replicate the Revolt Motors “Rev” voice experience using the Gemini Live API with server‑to‑server streaming, clean UI, low latency, native barge‑in/interrupts, and multilingual speech.
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/drive/1qRGLUORcclw6qFRj3GlbbZvA2u56OsIL?showPreview=true&showCode=true&showAssistant=true&showTreeView=true&resourceKey=
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

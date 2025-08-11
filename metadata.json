@@ -1,0 +1,7 @@
+{
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "name": "Gemini rev-demo  Voice Assistant",
+  "description": ""
+}

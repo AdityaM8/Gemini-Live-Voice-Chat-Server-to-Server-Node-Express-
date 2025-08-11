@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revolt – Rev (Gemini Live)</title>
+  <link rel="stylesheet" href="/styles.css" />
+<script type="importmap">
+{
+  "imports": {
+    "ws": "https://esm.sh/ws@^8.18.3",
+    "fs/": "https://esm.sh/fs@^0.0.1-security/",
+    "path": "https://esm.sh/path@^0.12.7",
+    "url": "https://esm.sh/url@^0.11.4",
+    "dotenv/": "https://esm.sh/dotenv@^17.2.1/",
+    "express": "https://esm.sh/express@^5.1.0",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react-feather": "https://esm.sh/react-feather@^2.0.10"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Rev · Revolt Motors</h1>
+      <p>Server‑to‑server Gemini Live voice chat (interruptible, multilingual)</p>
+    </header>
+
+    <section class="controls">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="interruptBtn" disabled>Interrupt</button>
+      <select id="lang">
+        <option value="auto" selected>Auto</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+      </select>
+    </section>
+
+    <section class="panes">
+      <div class="pane">
+        <h3>You</h3>
+        <div id="you"></div>
+      </div>
+      <div class="pane">
+        <h3>Rev</h3>
+        <div id="rev"></div>
+      </div>
+    </section>
+
+    <audio id="tts" autoplay></audio>
+  </main>
+  <script src="/app.js" type="module"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
